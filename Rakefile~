@@ -22,7 +22,7 @@ task :generate do
     rm -Rf _cache;
     git add .;
     git commit -m "updating page";
-    git push;
+    git checkout master;
   CMD
 end # task :generate
 
