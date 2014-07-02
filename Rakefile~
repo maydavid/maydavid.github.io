@@ -22,7 +22,7 @@ task :generate do
     rm -Rf .sass-cache;
     rm -Rf _cache;
     git add .;
-    git commit -m "updating gh-pages";
+    git commit -m "updating page";
     git checkout master;
   CMD
 end # task :generate
@@ -48,7 +48,7 @@ desc "Publish gh-pages to the appropriate repo/branch"
 task :publish do
   exec(<<-CMD)
     set -e
-    git push origin gh-pages:gh-pages
+    git push
   CMD
 end
 

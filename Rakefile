@@ -44,11 +44,11 @@ task :watch do
   [jekyllPid, sassPid].each { |pid| Process.wait(pid) }
 end # task :watch
 
-desc "Publish gh-pages to the appropriate repo/branch"
+desc "Publish pages to the appropriate repo/branch"
 task :publish do
   exec(<<-CMD)
     set -e
-    git push origin gh-pages:gh-pages
+    git push
   CMD
 end
 
