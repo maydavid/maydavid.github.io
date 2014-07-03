@@ -7,9 +7,11 @@ layout: default
 
 
 ### [Wireless Home Environment Monitoring](/wirelesshome.html)
-<div class="projectthumb"><a href="/wirelesshome.html"><img src="/img/tinysense.jpg" width="780" class="wireless_thumb" /></a></div>
+<div class="projectthumb"><a href="/wirelesshome.html"><img src="/img/tinysense_opt.jpg" width="780" class="wireless_thumb" /></a></div>
 
 ### [Energy management for Campers](/buscontrol.html)
-<div class="projectthumb"><a href="/buscontrol.html"><img src="/img/buscontrol.jpg" width="780" class="wireless_thumb" /></a></div>
+<div class="projectthumb"><a href="/buscontrol.html"><img src="/img/buscontrol_opt.jpg" width="780" class="buscontrol_thumb" /></a></div>
 
 ### [Solar-powered handcart](/bollo3k.html)
+<div class="projectthumb"><a href="/bollo3k.html"><img src="/img/bollo_opt.jpg" width="780" class="bollo_thumb" /></a></div>
+
