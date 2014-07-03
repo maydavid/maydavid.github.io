@@ -32,14 +32,14 @@
                     <li><a href="http://tybenz.com">Blog</a></li>
                 {% endif %}-->
                 {% if page.nav == "about" %}
-                <li><a href="/about/about.html" class="active">About</a></li>
+                <li><a href="index.html" class="active">About</a></li>
                 {% else %}
-                <li><a href="/about/about.html">About</a></li>
+                <li><a href="index.html">About</a></li>
                 {% endif %}
                 {% if page.nav == "projects" %}
-                <li><a href="/projects/projects.html" class="active">Projects</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
                 {% else %}
-                <li><a href="/projects/projects.html">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 {% endif %}
             </ul>
         </nav>

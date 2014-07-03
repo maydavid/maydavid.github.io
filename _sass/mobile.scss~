@@ -103,6 +103,7 @@ header nav ul {
 header .logo {
     font-style: italic;
     text-transform: lowercase;
+    font-family: $sansFamily;
 
 }
 
@@ -139,18 +140,17 @@ header .nav-selection {
 
 header .nav-selection.about {
     width: 44px;
-    //left: 49px;
     left: 0;
 }
 
-//header .nav-selection.blog {
-//    width: 33px;
-//    left: 0;
-//}
+header .nav-selection.research {
+    width: 63px;
+    left: 60px;
+}
 
 header .nav-selection.projects {
     width: 58px;
-    left: 60px;
+    left: 141px;
 }
 
 header .subnav-selection {
@@ -344,3 +344,20 @@ pre {
 .chords strong {
     color: $blue;
 }
+
+.projectthumb {
+	width: 780px;
+	height: 230px;
+    overflow:hidden
+}
+
+.wireless_thumb {
+    margin-left: 0px;
+    margin-top: -120px 
+}
+
+.buscontrol_thumb {
+    margin-left: 0px;
+    margin-top: -140px 
+}
+

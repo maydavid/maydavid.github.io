@@ -36,6 +36,11 @@
                 {% else %}
                 <li><a href="index.html">About</a></li>
                 {% endif %}
+		{% if page.nav == "research" %}
+                <li><a href="research.html" class="active">Research</a></li>
+                {% else %}
+                <li><a href="research.html">Research</a></li>
+                {% endif %}
                 {% if page.nav == "projects" %}
                 <li><a href="projects.html" class="active">Projects</a></li>
                 {% else %}

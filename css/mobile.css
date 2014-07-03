@@ -120,9 +120,13 @@ header .nav-selection.about {
   width: 44px;
   left: 0; }
 
+header .nav-selection.research {
+  width: 63px;
+  left: 60px; }
+
 header .nav-selection.projects {
   width: 58px;
-  left: 60px; }
+  left: 141px; }
 
 header .subnav-selection {
   position: absolute;
@@ -290,3 +294,16 @@ pre {
 
 .chords strong {
   color: #6ec5ff; }
+
+.projectthumb {
+  width: 780px;
+  height: 230px;
+  overflow: hidden; }
+
+.wireless_thumb {
+  margin-left: 0px;
+  margin-top: -120px; }
+
+.buscontrol_thumb {
+  margin-left: 0px;
+  margin-top: -160px; }
