@@ -307,3 +307,20 @@ pre {
 .buscontrol_thumb {
   margin-left: 0px;
   margin-top: -160px; }
+
+.date_foto {
+  position: relative;
+  float: right;
+  padding: 0 5px 5px;
+  margin: 0px;
+  display: table; }
+
+.date_foto img {
+  width: 300px; }
+
+.date_foto figcaption {
+  text-align: center;
+  display: table-caption;
+  caption-side: bottom;
+  background: #fff;
+  padding: 0 5px 5px; }

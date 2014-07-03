@@ -4,10 +4,11 @@ nav: about
 subnav: exemplar-home
 layout: default
 ---
-
-<h2><img src="/img/date_foto.jpg" width="311" style="float:right;margin-left:10px; margin-right:20px; margin-bottom:10px"></h2>
-
-
+<figure class="date_foto">
+<img src="/img/date_foto.jpg" alt="DATE14 University Booth">
+<figcaption>Me at the DATE14 University Booth - Photo by <a href="http://www.lis.ei.tum.de/?id=wagner">Philipp Wagner</a>
+</figcaption>
+</figure>
 My name is David May. Since 2011, I am a PhD student at the Technische Universität München
 <img src="/img/tum_logo.png" height="15">
 , in Munich, Germany at the [Institute for Integrated System](http://lis.ei.tum.de) of Prof. Herkersdorf. There, I am [working](/research.html) on novel approaches to substantially decrease the power consumption of future CMOS devices.
