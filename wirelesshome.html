@@ -9,14 +9,14 @@
 
   <link rel="shortcut icon" href="/img/me.jpeg
 ?s=16">
-  <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/font.css">
   <link rel="stylesheet" href="/css/mobile.css">
-  <link rel="stylesheet" href="/desktop.css" media="(min-width:40em)">
-  <link rel="stylesheet" href="/pygments.css">
+  <link rel="stylesheet" href="/css/desktop.css" media="(min-width:40em)">
+  <link rel="stylesheet" href="/css/pygments.css">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:300,500,300italic,500italic|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <script type="text/javascript" charset="utf-8" src="/js/matchmedia.js"></script>
   <script type="text/javascript" charset="utf-8" src="/js/picturefill.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
@@ -53,9 +53,6 @@
         <h5 class="logo"><a href="http://davidmay.org">davidmay.org</a></h5>
         <nav class="main">
             <ul>
-                <!--
-                    <li><a href="http://tybenz.com">Blog</a></li>
-                -->
                 
                 <li><a href="index.html">About</a></li>
                 
@@ -70,24 +67,6 @@
         <div class="nav-slider">
             <div class="nav-selection projects"></div>
         </div>
-	<!--
-        <div class="subnav-slider">
-            <div class="subnav-selection wireless_home"></div>
-        </div>
-        <nav class="subnav">
-            <ul>
-              
-                    <li><a href="/exemplar" data-subnav="exemplar-home">Home</a></li>
-                
-                
-                    <li><a href="/exemplar/docs" data-subnav="exemplar-docs">Docs</a></li>
-                
-                
-                    <li><a href="https://github.com/tybenz/exemplar/archive/master.zip" data-subnav="download">Download</a></li>
-                
-            </ul>
-        </nav>
-	-->
     </div>
 </header>
 
@@ -96,6 +75,7 @@
         <article class="container">
           <h1 class="hero">Wireless Home Environment Monitoring</h1>
           
+
         </article>
     </section>
 
@@ -125,9 +105,6 @@
             var active = document.querySelector( 'header nav.main a.active' ).innerHTML.toLowerCase(),
                 links = document.querySelectorAll( 'header nav.main li a'),
                 selection = document.querySelector( 'header .nav-selection' ),
-                subactive = document.querySelector( 'header nav.subnav a.active' ).dataset.subnav,
-                sublinks = document.querySelectorAll( 'header nav.subnav li a'),
-                subselection = document.querySelector( 'header .subnav-selection' ),
                 i, j, link;
             for ( i = 0; i < links.length; i++ ) {
                 link = links[ i ];
@@ -137,16 +114,6 @@
                 });
                 link.addEventListener( 'mouseout', function() {
                     selection.className = 'nav-selection ' + active;
-                });
-            }
-            for ( i = 0; i < sublinks.length; i++ ) {
-                link = sublinks[ i ];
-                link.addEventListener( 'mouseover', function() {
-                    subselection.className = 'subnav-selection';
-                    subselection.className = 'subnav-selection ' + this.dataset.subnav;
-                });
-                link.addEventListener( 'mouseout', function() {
-                    subselection.className = 'subnav-selection ' + subactive;
                 });
             }
         }

@@ -9,14 +9,14 @@
 
   <link rel="shortcut icon" href="/img/me.jpeg
 ?s=16">
-  <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/font.css">
   <link rel="stylesheet" href="/css/mobile.css">
-  <link rel="stylesheet" href="/desktop.css" media="(min-width:40em)">
-  <link rel="stylesheet" href="/pygments.css">
+  <link rel="stylesheet" href="/css/desktop.css" media="(min-width:40em)">
+  <link rel="stylesheet" href="/css/pygments.css">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:300,500,300italic,500italic|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <script type="text/javascript" charset="utf-8" src="/js/matchmedia.js"></script>
   <script type="text/javascript" charset="utf-8" src="/js/picturefill.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
@@ -53,9 +53,6 @@
         <h5 class="logo"><a href="http://davidmay.org">davidmay.org</a></h5>
         <nav class="main">
             <ul>
-                <!--
-                    <li><a href="http://tybenz.com">Blog</a></li>
-                -->
                 
                 <li><a href="index.html">About</a></li>
                 
@@ -70,24 +67,6 @@
         <div class="nav-slider">
             <div class="nav-selection research"></div>
         </div>
-	<!--
-        <div class="subnav-slider">
-            <div class="subnav-selection exemplar-home"></div>
-        </div>
-        <nav class="subnav">
-            <ul>
-              
-                  <li><a href="/exemplar" class="active" data-subnav="exemplar-home">Home</a></li>
-                
-                
-                    <li><a href="/exemplar/docs" data-subnav="exemplar-docs">Docs</a></li>
-                
-                
-                    <li><a href="https://github.com/tybenz/exemplar/archive/master.zip" data-subnav="download">Download</a></li>
-                
-            </ul>
-        </nav>
-	-->
     </div>
 </header>
 
@@ -95,8 +74,90 @@
     <section id="main">
         <article class="container">
           <h1 class="hero">Research</h1>
-          <p>More information on my research can be found on:</p>
-<a href='https://www.researchgate.net/profile/David_May6?cp=shp' title='Follow me on ResearchGate'><img alt='Follow me on ResearchGate' src='https://www.researchgate.net/images/public/profile_share_badge.png' /></a><a href='http://scholar.google.de/citations?user=sWB8LagAAAAJ'><img src='/img/Google_Scholar_logo.png' width='150' /></a>
+          <h2 id="approximate-computing">Approximate Computing</h2>
+
+<h3 id="motivation">Motivation</h3>
+
+<p>There are mainly two trends that make the life of IC designers difficult these days:</p>
+
+<ul>
+  <li>Shrinking CMOS feature sizes (technology scaling)</li>
+  <li>Increasing demand for low-power applications</li>
+</ul>
+
+<p>At a first glance one would say that these are positive trends. But they both have in common that the reliability of future CMOS devices has to suffer. Shrinking feature sizes result in a increasing susceptibility to soft-errors (mainly due to radiation), manufacturing defects and ageing effects. Low-power applications are usually realized by reducing the supply voltage of a circuit as it has a square influence to the dynamic power consumption.
+<script type="math/tex">P_{dyn} = CV²f</script>
+The problem is, that the propagation delay of a CMOS inverter is inverse proportional to the supply Voltage. Hence, if we want to reduce the power consumption of a circuit we either have to reduce the operation frequency (nobody wants that!) or we have to operate our circuit very close to timing violations which again results in errors in the circuit.</p>
+
+<p>In general one can say that IC designers have to decide in which direction they want to optimize their circuit:</p>
+
+<ul>
+  <li>Performance</li>
+  <li>Power</li>
+  <li>Area</li>
+  <li>Reliability</li>
+</ul>
+
+<p>This is what I call the <strong>PPA+R Trade-off</strong>.</p>
+
+<p><strong>Approximate Computing</strong> is one approach to tackle this trade-off. The idea is to <strong>relax the need for fully precise or fault-free operations</strong> in order to <strong>substantially improve the energy efficiency</strong>. Approximate Computing proposes to allow faults in the circuit to save power! Because, if one would tolerate faults within the circuit, one could e.g. further reduce the supply-voltage. One could also further increase the operating frequency, closer to or beyond the limit. One could further scale-down the technology. One could remove redundancy introduced to protect the circuit against soft errors. And so on… Approximate computing looks promising to open up a whole new range of optimizations!</p>
+
+<h3 id="potential-fields-of-application">Potential Fields of Application</h3>
+<p>Clearly, such an approach is not suitable for all kinds of applications. One will never be able to tolerate faults in an airbag controller, or in the flight controller of an airplane. Applications that seem to be predestined for approximate computing do come from the signal processing domain, video/audio processing, mining, and so on. In general, all applications that have: </p>
+
+<ul>
+  <li>Imprecision Tolerance</li>
+  <li>intrinsic Reliability</li>
+</ul>
+
+<p>I.e., applications that interfere with the human perception or already are prone to errors to a certain extend. For instance, a channel decoder, like a Viterbi decoder, does not care if the bad signal quality is coming from noise on the channel, or from noise in the hardware of the transmitter.</p>
+
+<h2 id="research-topics">Research Topics</h2>
+
+<h3 id="fpga-based-fault-emulation">FPGA-Based Fault Emulation</h3>
+<p>coming soon</p>
+
+<h3 id="data-path-separation">Data-path Separation</h3>
+<p>coming soon</p>
+
+<h3 id="global-fault-optimization">Global Fault Optimization</h3>
+<p>coming soon</p>
+
+<h2 id="publications">Publications</h2>
+
+<blockquote>
+  <p>D. May, W. Stechele, “Improving the Significance of Probabilistic Circuit Fault Emulations”, 20th IEEE International On-Line Testing Symposium (IOLTS 2014), Platja d’Aro, Catalunya, Spain, July 7-9, 2014</p>
+</blockquote>
+
+<blockquote>
+  <p>D. May, W. Stechele, “Probabilistic Circuit Fault Emulation”, edaWorkshop 14, Hannover, Germany, May 13-14, 2014</p>
+</blockquote>
+
+<blockquote>
+  <p>D. May, W. Stechele, “A Resource-efficient Probabilistic Fault Simulator”, 23rd International Conference on Field Programmable Logic and Applications (FPL 2013), Porto, Portugal, Sept. 2-4, 2013</p>
+</blockquote>
+
+<blockquote>
+  <p>D. May, W. Stechele, “An FPGA-based Probability-aware Fault Simulator”, SAMOS XII, International Conference on Embedded Computer Systems: Architectures, Modeling and Simulation, Samos, Greece, July 16-19, 2012</p>
+</blockquote>
+
+<h2 id="demos">Demos</h2>
+
+<blockquote>
+  <p>edaWorkshop 14, Hannover</p>
+</blockquote>
+
+<blockquote>
+  <p>DATE14, Dresden</p>
+</blockquote>
+
+<h2 id="public-research-profiles">Public Research Profiles</h2>
+<p>More information on my research as well as publications can be found on:</p>
+
+<p><a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/David_May6?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate" /></a></p>
+
+<p><a href="http://scholar.google.de/citations?user=sWB8LagAAAAJ"><img src="/img/Google_Scholar_logo.png" width="150" /></a></p>
+
         </article>
     </section>
 
@@ -126,9 +187,6 @@
             var active = document.querySelector( 'header nav.main a.active' ).innerHTML.toLowerCase(),
                 links = document.querySelectorAll( 'header nav.main li a'),
                 selection = document.querySelector( 'header .nav-selection' ),
-                subactive = document.querySelector( 'header nav.subnav a.active' ).dataset.subnav,
-                sublinks = document.querySelectorAll( 'header nav.subnav li a'),
-                subselection = document.querySelector( 'header .subnav-selection' ),
                 i, j, link;
             for ( i = 0; i < links.length; i++ ) {
                 link = links[ i ];
@@ -138,16 +196,6 @@
                 });
                 link.addEventListener( 'mouseout', function() {
                     selection.className = 'nav-selection ' + active;
-                });
-            }
-            for ( i = 0; i < sublinks.length; i++ ) {
-                link = sublinks[ i ];
-                link.addEventListener( 'mouseover', function() {
-                    subselection.className = 'subnav-selection';
-                    subselection.className = 'subnav-selection ' + this.dataset.subnav;
-                });
-                link.addEventListener( 'mouseout', function() {
-                    subselection.className = 'subnav-selection ' + subactive;
                 });
             }
         }

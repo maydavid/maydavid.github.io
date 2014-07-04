@@ -9,14 +9,14 @@
 
   <link rel="shortcut icon" href="/img/me.jpeg
 ?s=16">
-  <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/font.css">
   <link rel="stylesheet" href="/css/mobile.css">
-  <link rel="stylesheet" href="/desktop.css" media="(min-width:40em)">
-  <link rel="stylesheet" href="/pygments.css">
+  <link rel="stylesheet" href="/css/desktop.css" media="(min-width:40em)">
+  <link rel="stylesheet" href="/css/pygments.css">
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:300,500,300italic,500italic|Ubuntu+Condensed' rel='stylesheet' type='text/css'>
   <script type="text/javascript" charset="utf-8" src="/js/matchmedia.js"></script>
   <script type="text/javascript" charset="utf-8" src="/js/picturefill.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
@@ -53,9 +53,6 @@
         <h5 class="logo"><a href="http://davidmay.org">davidmay.org</a></h5>
         <nav class="main">
             <ul>
-                <!--
-                    <li><a href="http://tybenz.com">Blog</a></li>
-                -->
                 
                 <li><a href="index.html" class="active">About</a></li>
                 
@@ -70,24 +67,6 @@
         <div class="nav-slider">
             <div class="nav-selection about"></div>
         </div>
-	<!--
-        <div class="subnav-slider">
-            <div class="subnav-selection exemplar-home"></div>
-        </div>
-        <nav class="subnav">
-            <ul>
-              
-                  <li><a href="/exemplar" class="active" data-subnav="exemplar-home">Home</a></li>
-                
-                
-                    <li><a href="/exemplar/docs" data-subnav="exemplar-docs">Docs</a></li>
-                
-                
-                    <li><a href="https://github.com/tybenz/exemplar/archive/master.zip" data-subnav="download">Download</a></li>
-                
-            </ul>
-        </nav>
-	-->
     </div>
 </header>
 
@@ -95,16 +74,19 @@
     <section id="main">
         <article class="container">
           <h1 class="hero">About me</h1>
-          <figure class='date_foto'>
-<img alt='DATE14 University Booth' src='/img/date_foto.jpg' />
-<figcaption>Me at the DATE14 University Booth - Photo by <a href='http://www.lis.ei.tum.de/?id=wagner'>Philipp Wagner</a>
+          <figure class="date_foto">
+<img src="/img/date_foto.jpg" alt="DATE14 University Booth" />
+<figcaption>Me at the DATE14 University Booth - Photo by <a href="http://www.lis.ei.tum.de/?id=wagner">Philipp Wagner</a>
 </figcaption>
 </figure>
-<p>My name is David May. Since 2011, I am a PhD student at the Technische Universität München <img height='15' src='/img/tum_logo.png' /> , in Munich, Germany at the <a href='http://lis.ei.tum.de'>Institute for Integrated System</a> of Prof. Herkersdorf. There, I am <a href='/research.html'>working</a> on novel approaches to substantially decrease the power consumption of future CMOS devices.</p>
+<p>My name is David May. Since 2011, I am a PhD student at the Technische Universität München
+<img src="/img/tum_logo.png" height="15" />
+, in Munich, Germany at the <a href="http://lis.ei.tum.de">Institute for Integrated System</a> of Prof. Herkersdorf. There, I am <a href="/research.html">working</a> on novel approaches to substantially decrease the power consumption of future CMOS devices.</p>
 
-<p>In 2010, I finished my studies in electrical engineering at the Institute for Communications Engineering (Prof. Kötter) also at the TUM. During my studies I had 2 stays abroad at the Budapest University of Technology and Economics at the <a href='https://www.facebook.com/pages/RohdeSchwarz-Referencelaboratory/262903123770686'>Rohde &amp; Schwarz Reference Laboratory</a>. There, I also wrote my Diploma thesis about the design and implementation of a software-defined DAB+ receiver.</p>
+<p>In 2010, I finished my studies in electrical engineering at the Institute for Communications Engineering (Prof. Kötter) also at the TUM. During my studies I had 2 stays abroad at the Budapest University of Technology and Economics at the <a href="https://www.facebook.com/pages/RohdeSchwarz-Referencelaboratory/262903123770686">Rohde &amp; Schwarz Reference Laboratory</a>. There, I also wrote my Diploma thesis about the design and implementation of a software-defined DAB+ receiver.</p>
 
-<p>In my spare time I am mostly occupied with my hobbies: Sport, Music and my VW T3 Camper. My private projects are mainly dedicated to make my life easier. From <a href='/wirelesshome.html'>wireless environment sensing at home</a> via <a href='/buscontrol.html'>energy management in my camper</a> to a <a href='/bollo3k.html'>solar-powered handcart</a> for summer-trips to the Isar - If something is panted in to my mind, it will be done.</p>
+<p>In my spare time I am mostly occupied with my hobbies: Sport, Music and my VW T3 Camper. My private projects are mainly dedicated to make my life easier. From <a href="/wirelesshome.html">wireless environment sensing at home</a> via <a href="/buscontrol.html">energy management in my camper</a> to a <a href="/bollo3k.html">solar-powered handcart</a> for summer-trips to the Isar - If something is panted in to my mind, it will be done. </p>
+
         </article>
     </section>
 
@@ -134,9 +116,6 @@
             var active = document.querySelector( 'header nav.main a.active' ).innerHTML.toLowerCase(),
                 links = document.querySelectorAll( 'header nav.main li a'),
                 selection = document.querySelector( 'header .nav-selection' ),
-                subactive = document.querySelector( 'header nav.subnav a.active' ).dataset.subnav,
-                sublinks = document.querySelectorAll( 'header nav.subnav li a'),
-                subselection = document.querySelector( 'header .subnav-selection' ),
                 i, j, link;
             for ( i = 0; i < links.length; i++ ) {
                 link = links[ i ];
@@ -146,16 +125,6 @@
                 });
                 link.addEventListener( 'mouseout', function() {
                     selection.className = 'nav-selection ' + active;
-                });
-            }
-            for ( i = 0; i < sublinks.length; i++ ) {
-                link = sublinks[ i ];
-                link.addEventListener( 'mouseover', function() {
-                    subselection.className = 'subnav-selection';
-                    subselection.className = 'subnav-selection ' + this.dataset.subnav;
-                });
-                link.addEventListener( 'mouseout', function() {
-                    subselection.className = 'subnav-selection ' + subactive;
                 });
             }
         }
