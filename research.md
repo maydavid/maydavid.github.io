@@ -42,8 +42,12 @@ I.e., applications that interfere with the human perception or already are prone
 ### FPGA-Based Fault Emulation
 coming soon
 
+<iframe width="420" height="315" src="//www.youtube.com/embed/BwwdLG4vBSI" frameborder="0" allowfullscreen></iframe>
+
 ### Data-path Separation
 coming soon
+
+<iframe width="420" height="315" src="//www.youtube.com/embed/8VpeWYgk4-o" frameborder="0" allowfullscreen></iframe>
 
 ### Global Fault Optimization
 coming soon

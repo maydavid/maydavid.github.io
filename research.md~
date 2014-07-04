@@ -35,15 +35,18 @@ Clearly, such an approach is not suitable for all kinds of applications. One wil
 + Imprecision Tolerance
 + intrinsic Reliability
 
-I.e., applications that interfere with the human perception or already are prone to errors to a certain extend.
+I.e., applications that interfere with the human perception or already are prone to errors to a certain extend. For instance, a channel decoder, like a Viterbi decoder, does not care if the bad signal quality is coming from noise on the channel, or from noise in the hardware of the transmitter.
 
 ## Research Topics
 
 ### FPGA-Based Fault Emulation
 coming soon
 
+<iframe width="420" height="315" src="//www.youtube.com/embed/BwwdLG4vBSI" frameborder="0" allowfullscreen></iframe>
+
 ### Data-path Separation
 coming soon
+<iframe width="420" height="315" src="//www.youtube.com/embed/8VpeWYgk4-o" frameborder="0" allowfullscreen></iframe>
 
 ### Global Fault Optimization
 coming soon
