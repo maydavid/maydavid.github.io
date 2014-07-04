@@ -5,10 +5,24 @@ subnav: exemplar-home
 layout: default
 ---
 
+---
+
 ## Approximate Computing
+---
 
-### Motivation
+### Outline
 
++ [Motivation](#motivation)
+
++ [FPGA-based fault emulation](#faultinjection)
+
++ [Data-path Separation](#dpcp)
+
++ [Global Fault Optimization](#globalopt)
+
++ [Publications](#publications)
+
+### <a name="motivation"></a> Motivation 
 There are mainly two trends that make the life of IC designers difficult these days:
 
 + Shrinking CMOS feature sizes (technology scaling)
@@ -25,6 +39,9 @@ In general one can say that IC designers have to decide in which direction they 
 + Area
 + Reliability
 
+
+
+
 This is what I call the **PPA+R Trade-off**.
 
 __Approximate Computing__ is one approach to tackle this trade-off. The idea is to __relax the need for fully precise or fault-free operations__ in order to __substantially improve the energy efficiency__. Approximate Computing proposes to allow faults in the circuit to save power! Because, if one would tolerate faults within the circuit, one could e.g. further reduce the supply-voltage. One could also further increase the operating frequency, closer to or beyond the limit. One could further scale-down the technology. One could remove redundancy introduced to protect the circuit against soft errors. And so on... Approximate computing looks promising to open up a whole new range of optimizations!
@@ -39,20 +56,20 @@ I.e., applications that interfere with the human perception or already are prone
 
 ## Research Topics
 
-### FPGA-Based Fault Emulation
+### <a name="faultinjection"></a>FPGA-Based Fault Emulation
 coming soon
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/BwwdLG4vBSI" frameborder="0" allowfullscreen></iframe>
 
-### Data-path Separation
+### <a name="dpcp"></a>Data-path Separation
 coming soon
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/8VpeWYgk4-o" frameborder="0" allowfullscreen></iframe>
 
-### Global Fault Optimization
+### <a name="globalopt"></a>Global Fault Optimization
 coming soon
 
-## Publications
+## <a name="publications"></a> Publications
 
 > D. May, W. Stechele, "Improving the Significance of Probabilistic Circuit Fault Emulations", 20th IEEE International On-Line Testing Symposium (IOLTS 2014), Platja d'Aro, Catalunya, Spain, July 7-9, 2014
 
