@@ -5,7 +5,15 @@ subnav: exemplar-home
 layout: default
 ---
 
-More information on my research can be bound on:
+## Approximate Computing
+There are mainly two trends that make the life of IC designers difficult these days:
++ Shrinking CMOS feature sizes (technology scaling)
++ Increasing demand for low-power applications
+At a first glance one would say that these are positive trends. But they both have in common that the reliability of future CMOS devices has to suffer. Shrinkinf feature sizes result in a increasing susceptibility to soft-errors (mainly due to radiation), manufacturing defects and ageing effects. Low-power applications are usually realized by reducing the supply voltage of a circuit as it has a square influence.
+
+$$ \lefta² + b² = c² $$
+
+More information on my research as well as publications can be found on:
 
 <a title="Follow me on ResearchGate" href="https://www.researchgate.net/profile/David_May6?cp=shp"><img src="https://www.researchgate.net/images/public/profile_share_badge.png" alt="Follow me on ResearchGate"/></a>
 
