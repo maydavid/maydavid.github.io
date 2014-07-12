@@ -31,7 +31,7 @@ For storing the sensor values and a nice graphical representations as well as mo
 
 ### Sensor Nodes
 
-The sensors are based on the [tinyTX](http://nathan.chantrell.net/tinytx-wireless-sensor/) modules from Nathan Chantrell. The modules are Arduino compatible. I modified them to have the ISP connector on board and used the smd version of the ATtiny.
+The sensors are based on the [tinyTX](http://nathan.chantrell.net/tinytx-wireless-sensor/) modules from Nathan Chantrell. The modules are Arduino compatible. I modified them to have the ISP connector on board and used the smd version of the attiny.
 
 <div class="projectthumb"><a href="/img/tinysense_node_opt.jpg"><img src="/img/tinysense_node_opt.jpg" width="780" class="tinysense_node" /></a></div>
 

@@ -363,7 +363,7 @@ pre {
 
 .bollo_thumb {
     margin-left: 0px;
-    margin-top: -220px 
+    margin-top: -250px 
 }
 
 .date_foto{
@@ -389,4 +389,16 @@ pre {
   padding: 0 5px 5px;
 }
 
+img[alt=emoncms_graph] { width: 700px; }
+
+
+.tinysense_node {
+    margin-left: 0px;
+    margin-top: -200px 
+}
+
+.tinysense_base {
+    margin-left: 0px;
+    margin-top: 200px 
+}
 

@@ -57,9 +57,16 @@ I.e., applications that interfere with the human perception or already are prone
 ## Research Topics
 
 ### <a name="faultinjection"></a>FPGA-Based Fault Emulation
-coming soon
+But even if one has an application that somehow might be able to tolerate faults. We have to answer important qustions prior allowing faults.
+
++ How can we determine the behavior of the circuit in case of faults?
++ How can we determine where and to what extend errors cant be tolerated?
+
+Only an extensive circuit analysis can answer these questions. This can be done with several approaches. For instance, analytically or with software-based emulations (fault-injection). They both have pros and cons, so we decided to go for third approach -> FPGA-based fault-emulation (injection). That means we are mapping the circuit we are investigating on an FPGA (although the target-platform might be an ASIC). Actually we placing it twice on the FPGA. The first copy is fault-free and in the second one we are injecting faults.Both copies run synchronously, using the same stimuli. Hence in a fault-free case they calculate the same result. However, if we now inject faults in one circuit, we can immediately observe if the fault has been propagated to the output, by observing the outputs of the two copies.
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/BwwdLG4vBSI" frameborder="0" allowfullscreen></iframe>
+
+
 
 ### <a name="dpcp"></a>Data-path Separation
 coming soon
