@@ -399,6 +399,6 @@ img[alt=emoncms_graph] { width: 700px; }
 
 .tinysense_base {
     margin-left: 0px;
-    margin-top: 200px 
+    margin-top: -200px 
 }
 
