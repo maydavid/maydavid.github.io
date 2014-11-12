@@ -18,6 +18,6 @@ layout: default
 ### [VW T3](/bus.html)
 <div class="projectthumb"><a href="/bus.html"><img src="/img/bus_opt.jpg" width="780" class="bus_thumb" /></a></div>
 
-### [Software Defined DAB/DAB+ Receiver](/sdr.html)
-<div class="projectthumb"><a href="/sdr.html"><img src="/img/sdr_opt.jpg" width="780" class="sdr_thumb" /></a></div>
+### [Software Defined DAB/DAB+ Receiver](/rtl-dab.html)
+<div class="projectthumb"><a href="/rtl-dab.html"><img src="/img/sdr_opt.jpg" width="780" class="sdr_thumb" /></a></div>
 

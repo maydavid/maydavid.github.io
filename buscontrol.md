@@ -9,7 +9,7 @@ layout: default
 
 
 # Why?
-Energy management i
+
 # How?
 
 # Downloads
