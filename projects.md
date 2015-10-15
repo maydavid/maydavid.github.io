@@ -21,3 +21,9 @@ layout: default
 ### [Software Defined DAB/DAB+ Receiver](/rtl-dab.html)
 <div class="projectthumb"><a href="/rtl-dab.html"><img src="/img/sdr_opt.jpg" width="780" class="sdr_thumb" /></a></div>
 
+### [MSP430 USB breakout board](/msp430_usb.html)
+<div class="projectthumb"><a href="/msp430_usb.html"><img src="/img/msp430_usb_opt.jpg" width="780" class="sdr_thumb" /></a></div>
+
+
+
+
